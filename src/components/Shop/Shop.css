@@ -5,3 +5,9 @@
 .shop-container {
   border-right: 1px solid #cecece;
 }
+.cart-container {
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  right: 7%;
+}
