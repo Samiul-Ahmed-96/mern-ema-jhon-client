@@ -4,7 +4,6 @@ import './Product.css';
 const Product = (props) => {
     const{name,seller,price,img,stock} = props.items;
     const addToCart = props.handleAddToCart;
-    console.log(addToCart)
     return (
         <div className="products-details">
             <div>
