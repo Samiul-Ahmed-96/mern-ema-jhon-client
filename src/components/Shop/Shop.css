@@ -2,3 +2,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.shop-container {
+  border-right: 1px solid #cecece;
+}
