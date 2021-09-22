@@ -1,0 +1,25 @@
+.header img {
+  width: 200px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background: blanchedalmond;
+  padding: 20px;
+}
+
+.nav nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav nav ul li a {
+  color: #222;
+  margin: 0px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(241 200 146);
+  padding: 10px;
+  border-radius: 15px;
+}
