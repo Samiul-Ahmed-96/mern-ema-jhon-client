@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #737373;
   padding: 20px 1px;
 }
 .product-content h3 {

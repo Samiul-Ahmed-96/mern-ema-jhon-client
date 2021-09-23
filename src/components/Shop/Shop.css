@@ -3,11 +3,25 @@
   grid-template-columns: 3fr 1fr;
 }
 .shop-container {
-  border-right: 1px solid #cecece;
+  border-right: 1px solid #737373;
 }
 .cart-container {
   padding: 20px;
   text-align: center;
   position: fixed;
   right: 7%;
+  background: #fdbc65;
+  text-align: left;
+  border: 2px solid #737373;
+  border-radius: 10px;
+}
+.product-content button {
+  background: #fdbc65;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  font-weight: 600;
 }
