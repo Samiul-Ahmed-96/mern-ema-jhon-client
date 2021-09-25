@@ -9,11 +9,17 @@ const Shop = () => {
     const [products,setProducts] = useState([])
     //For Cart
     const [cart, setCart] = useState([])
+    //for Matched products
+    const [matchedProducts,setMatchedProducts] = useState([]) 
 
     useEffect(()=>{
         fetch('./products.JSON')
         .then(res => res.json())
-        .then(data => setProducts(data))
+        .then(data => {
+            setProducts(data);
+            setMatchedProducts(data);
+        })
+        
     },[])
 
     useEffect(()=>{
@@ -31,17 +37,22 @@ const Shop = () => {
         addToDb(product.key);
         
     }
+    const handleSearch = (event) =>{
+       const searchText =  event.target.value;
+       const matchedProducts = products.filter(product => product.name.toLowerCase().includes(searchText.toLowerCase()));
+       setMatchedProducts(matchedProducts);
+    }
 
     return (
         <>
         <div className="search-field">
-            <input type="text" placeholder="search your product"/>
+            <input onChange={handleSearch} type="text" placeholder="search your product"/>
         </div>
         <div className="main-shop">
         
         <div className="shop-container">
             {
-                products.map(product => <Product 
+                matchedProducts.map(product => <Product 
                 key={product.key}
                 items={product}
                 handleAddToCart={handleAddToCart}
