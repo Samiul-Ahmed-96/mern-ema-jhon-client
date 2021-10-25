@@ -1,25 +1,20 @@
-.header img {
-  width: 200px;
+.header{
+    text-align: center;
 }
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  background: blanchedalmond;
-  padding: 20px;
+.logo{
+    height: 50px;
 }
-
-.nav nav ul li {
-  list-style: none;
-  display: inline-block;
+.header nav {
+    background-color: black;
+    line-height: 40px;
 }
-
-.nav nav ul li a {
-  color: #222;
-  margin: 0px 20px;
-  text-decoration: none;
-  font-weight: 700;
-  background-color: rgb(241 200 146);
-  padding: 10px;
-  border-radius: 15px;
+.header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 20px;
+}
+.header nav a:hover{
+    background-color: lightgray;
 }
